@@ -2,13 +2,15 @@
 # -*- coding: utf-8 -*-
 
 from Game import Game
+import pygame
 
 
 def main():
-    game = Game.Game(1080, 720)
+    pygame.init()
+
+    game = Game.Game(1024, 1024)
     game.run()
 
 
 if __name__ == '__main__':
     main()
-
